@@ -11,9 +11,9 @@ int main(){
             printf("Bienvenido al sistema :)");
             cont = 4;
         }
-        cont = cont+1;
-    } while (cont == 3);
-    if (cont==3){ 
+        cont++;
+    } while (cont < 3);
+        if (cont==3){ 
         printf("Numero de intentos agotado");
     }
 

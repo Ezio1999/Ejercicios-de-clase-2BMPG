@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int mayor=0, menor=0, z=0, i=0;
+    int mayor=0, menor=1, z=0, i=0;
     int x;
     while (i<10)
     {

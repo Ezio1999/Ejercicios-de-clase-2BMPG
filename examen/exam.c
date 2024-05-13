@@ -56,16 +56,26 @@ int main()
             }
             break;
         }else {
+                intentos--;
+                printf("Cantidad de artículos inválida. Le quedan %d intentos", intentos);
+
+                if (intentos == 0) {
+                    printf("Acceso denegado ");
+                }
+            }
+        } else {
             intentos--;
-            printf("Contraseña incorrecta le quedan %d intentos", intentos);
-            if(intentos == 0){
+            printf("Contraseña incorrecta. Le quedan %d intentos", intentos);
+
+            if (intentos == 0) {
                 printf("Acceso denegado ");
             }
         }
     }
-    }
-    
 
-    printf("Su factura es de: $%i", x);
+    if (acum > 1) { 
+        printf("\nSu factura es de: $%d", x);
+    }
     return 0;
 }
+

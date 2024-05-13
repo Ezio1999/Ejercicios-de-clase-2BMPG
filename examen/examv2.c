@@ -28,23 +28,22 @@ int main()
                 {
                     acum += x;
                 }
-                else{
-                    printf("Ingrese de nuevo el precio");
+                    else{
+                        printf("Ingrese de nuevo el precio");
                 }
             }
-            break;
-            else{
-                intentos--;
-                printf("Le quedan %d intentos",intentos);
-                if(intetnos == 0){
-                    printf("Acceso denegado");
-                }
-            }
-
+        break;
         }
-        if(acum > 1){
+        else{
+            intentos--;
+            printf("Le quedan %d intentos",intentos);
+            if ( intentos == 0){
+                printf("Acceso denegado");
+            }
+    }
+    }
+        if(acum >= 1){
             printf("\nSu facttura es de: $%d",x);
         }
+    return 0;
     }
-        return 0;
-}

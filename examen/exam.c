@@ -36,7 +36,7 @@ int main()
     //sistema de acceso 
     if (strcmp (contra,conv) == 0)
     {
-        printf("\nBienvenido al sistema %s :)", nombre);
+        printf("\nBienvenido al sistema %s:)", nombre);
         printf("\n¿Cuantos articulos llevas?");
         scanf("%d", &art);
         //sistema de articulos 
@@ -78,4 +78,3 @@ int main()
     }
     return 0;
 }
-
